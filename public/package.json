@@ -1,0 +1,32 @@
+{
+  "name": "ganbaru",
+  "scripts": {
+    "build": "rimraf ./dist && parcel build ./src/pick-spreadsheet/index.html",
+    "dev": "parcel ./src/pick-spreadsheet/index.html",
+    "deploy": "yarn run build && firebase deploy --only hosting"
+  },
+  "repository": "ssh://git@github.com/resessh/ganbaru.git",
+  "author": "resessh <info@resessh.net>",
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/firebase": "^3.2.1",
+    "@types/qs": "^6.5.1",
+    "@vue/component-compiler-utils": "^2.5.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "parcel-bundler": "^1.11.0",
+    "rimraf": "^2.6.3",
+    "sass": "^1.16.1",
+    "typescript": "^3.2.4",
+    "vue-hot-reload-api": "^2.3.1",
+    "vue-template-compiler": "^2.5.22"
+  },
+  "dependencies": {
+    "@firebase/firestore": "^1.0.1",
+    "axios": "^0.18.0",
+    "firebase": "^5.8.1",
+    "qs": "^6.6.0",
+    "vue": "^2.5.22"
+  },
+  "private": true
+}
